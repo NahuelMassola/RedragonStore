@@ -268,6 +268,12 @@
      list-style: none;
  }
 
+ .animate__flash {
+     color: white;
+     text-transform: uppercase;
+     font-size: 1rem;
+ }
+
 /* <!-- Fin Agregado Nav para "contactanos"  */
 
 /* <!-- Inicio seccion Imagenes index */
@@ -304,7 +310,12 @@
     color: white;
     margin-left: 2.5rem;
     margin-top: 3rem;
+    transition: color 2s ease;
       
+}
+
+.imagenes h1:hover {
+    color: blue;
 }
 
 .imagenes h2 {
@@ -314,7 +325,11 @@
     color: white;
     margin-left: 1rem;
     margin-top: 6rem;
-      
+    transition: color 2s ease;
+}
+
+.imagenes h2:hover {
+    color: blue;
 }
 
 .imagenes2 h2 {
@@ -324,7 +339,13 @@
     color: white;
     padding: 1rem;
     margin-left: 1rem;
+    transition: all 1s;
 }
+
+.imagenes2 h2:hover {
+    color: rgb(142, 6, 31);
+}
+
 .imagenes2 h1 {
     text-align: start;
     align-content: center;
@@ -333,7 +354,11 @@
     color: white;
     margin-left: 2rem;
     margin-top: 16rem;
+    transition: all 1s;
+}
 
+.imagenes2 h1:hover {
+    color: rgb(142, 6, 31);
 }
 /* <!-- fin seccion Imagenes index */
 
@@ -436,6 +461,14 @@
 
 .boton__contacto {
     margin: 1rem;
+    width: 60px;
+    height: 30px;
+    transition-duration: 1s;
+}
+.boton__contacto:hover {
+    color: rgb(252, 252, 255);
+    background-color: blue;
+
 }
 
 .textoinput__contacto {
@@ -837,6 +870,11 @@
     .nav__list a {
         color: white;
         margin-left: 0.5rem;
+        
+    }
+
+    .nav__list a:hover {
+        color: red;
     }
 
     /* <!-- Fin Agregado Media Queris 1024px Login */
