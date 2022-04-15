@@ -4,104 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="../img/Red-dragon.png" type="image/x-icon">
     <title>Redragon</title>
+    
     <!-- linkear nuestro css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    
     <!-- google font --> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+    
     <!-- Animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-</head>
+    
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- iconos Bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  </head>
 <body>
-<!-- inicio navbar --> 
 
-
-<div class="container__productos">
-  <header class="header">
-    <nav class="nav">  
-      <div class="header__logo">
-        <img src="../img/Red-dragon.png" alt="chaperostore" style="height: 50px;">
-        <h1 class="title">Chapero Store</h1>
+  <!-- inicio navbar --> 
+  <div class="container position-sticky top-0 " style="z-index:1">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+      <div class="container">
+        <img src="../img/REDRAGON1.jpg" alt="" style="width: 65px;">
+        <a class="navbar-brand text-dark" href="">CHAPERO STORE</a>
+        <button class="navbar-toggler text-white" type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent " aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-dark text-center" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-center" aria-current="page" href="./contactanos.html">CONTACTANOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-center" href="./nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-center" href="./productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-center" href="./login.html">LOGIN</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="nav__list">
-        <li class="nav__item nav__item--1">
-          <a class="nav__link" href="../index.html">Inicio</a>
-        </li>
-        <li class="nav__item nav__item--2">
-          <a class="nav__link" href="./contactanos.html">Contactanos</a>
-        </li>
-        <li class="nav__item nav__item--3">
-           <a class="nav__link" href="./nosotros.html">Nosotros</a>
-        </li>
-        <li class="nav__item nav__item--4">
-           <a class="nav__link" href="./productos.html">Productos</a>
-        </li>
-        <li class="nav__item nav__item--5">
-           <a class="nav__link" href="./login.html">Login</a>
-        </li>  
-      </ul>
-    </nav>     
-  </header>
+    </nav>
+  </div>
+ 
 
 
        
   <!-- inicio Seccion Imagenes -->  
-  <section id="section__productos">
-    <div class="row__productos">
-       <div>
-           <h2 class="title_productos">Monitores</h2>
-         <a href=""><img class="img__productos" src="../img/logo monitor.jpg" alt="" ></a>
+  
+  <div class="container-fluid container--productos">
+    <div class="container">
+      <div class="row text-center mb-1 py-3" >
+        <div class="col-sm-12 col-md-6">
+          <a href="./productos.html"><img src="../img/logo monitor.jpg" alt="" style="width: 300px;"></a>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <a href="./productos.html"><img src="../img/logo auriculares.jpg" alt="" style="width: 300px;"></a>
+        </div>
       </div>
-      <div>
-         <h2 class="title_productos">auriculares</h2>
-          <a href=""><img class="img__productos" src="../img/logo auriculares.jpg" alt="" ></a>
+      <div class="row text-center mb-1">
+        <div class="col-sm-12 col-md-6">
+          <a href="./productos.html"><img src="../img/logoTeclado.jpg" alt="" style="width: 300px;"></a>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <a href="./productos.html"><img src="../img/Logo Mouse.jpg" alt="" style="width: 300px;"></a>
+        </div>
       </div>
     </div>
-  </section>     
-  <section id="section2__productos">
-   <div class="row__productos">
-     <div>
-       <h2 class="title_productos">Mouse</h2>
-       <a href=""><img class="img__productos" src="../img/Logo Mouse.jpg" alt="" ></a>
-     </div>
-     <div>
-       <h2 class="title_productos">Teclados</h2>
-       <a href=""><img class="img__productos" src="../img/20210813_2230511-fe29ac1b25cbbaa49316289047880332-640-0.jpg" alt="" ></a>
-     </div>
-   </div>
-  </section>  
+  </div>
  
-<!-- inicio footer -->
-  <footer class="footer">  
-    <section id="section__redes"> 
-      <div class="Redes">
-         <div class="col">
-           <h2 class="footertexto3">Seguinos en Nuestras Redes</h2>
-           <img class="iconosredes" src="../img/facebook.png" alt="" >
-           <img class="iconosredes" src="../img/instagram.png" alt="" >
-           <img class="iconosredes" src="../img/twitter.png" alt=""  >
-           <img class="iconosredes" src="../img/youtube.png" alt="" >
-         </div>
-       </div>
-     </section>
-     <section class="section__pago">
-       <div class="medios__depago">
-           <div class="col">
-             <h2 class="footertexto2">medios de pago</h2>
-             <img class="iconospago" src="../img/visa.png" alt="" >
-             <img class="iconospago" src="../img/maestro.png" alt="" >
-             <img class="iconospago" src="../img/dinero.png" alt=""  >
-             <img class="iconospago" src="../img/facil.png" alt="" >
-           </div>
-         </div>
-     </section>    
-  </footer>
- 
-  <!-- fin footer -->
+ <!-- inicio Footer -->
 
-</div>
+ <footer class="footer">
+  <div class="container-fluid bg-dark">
+    <div class="container">
+      <div class="row text-center text-white">
+          <div class="footer__chapero col-md-4">
+            <ul id="block_contact_footer "> 
+              <li class="item logo-footer"><img src="../img/Red-dragon.png" style="width: 32px;">CHAPEROSTORE</li> <br>
+              <li class="item">Si tenes dudas escribinos! <br> <br> (0351)151234567</li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-1">
+            <div class="row">
+              <div class="redes col-md-3">
+                <a href=""><img src="../img/facebook.png" alt="" style="width: 32px;"></a>
+              </div>
+              <div class="redes col-md-3">
+                <a href=""><img src="../img/instagram.png" alt="" style="width: 32px;"></a>
+              </div>
+              <div class="redes col-md-3">
+                <a href=""><img src="../img/youtube.png" alt="" style="width: 32px;" ></a>
+              </div>
+              <div class="redes col-md-3">
+                <a href=""><img src="../img/twitter.png" alt="" style="width: 32px;" ></a>
+              </div>
+            </div>
+          </div>
+          <div class="link-footer col-md-4">
+            <ul class="">
+              <li class="link">
+                <a class="text-white" href="../index.html">INICIO</a>
+              </li>
+              <li class="link">
+                <a class="text-white" href="./contactanos.html">CONTACTANOS</a>
+              </li>
+              <li class="link">
+                <a class="text-white" href="./nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="link">
+                <a class="text-white" href="./productos.html">PRODUCTOS</a>
+              </li>
+              <li class="link">
+                <a class="text-white" href="./login.html">LOGIN</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-white text-center bg-dark">
+    <div class="row">
+      <div class="col-12">
+        <p class="copy">Copyright 2019-2022 - CHAPEROSTORE - Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
 

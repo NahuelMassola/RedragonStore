@@ -4,97 +4,382 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="img/Red-dragon.png" type="image/x-icon">
     <title>Redragon</title>
+    
     <!-- linkear nuestro css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    
     <!-- google font --> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+    
+    <!-- Animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-</head>
+    
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- iconos Bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  </head>
 <body>
-    
+
   <!-- inicio navbar --> 
-<div class="container">
-  <header class="header">
-      <nav class="nav">  
-        <div class="header__logo">
-          <img class="animate__animated animate__shakeY" src="img/Red-dragon.png" alt="chaperostore" style="height: 50px;">
-            <h1 class="title">Chapero Store</h1>
+  <div class="container position-sticky top-0 " style="z-index:1">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+      <div class="container">
+        <img src="../img/REDRAGON1.jpg" alt="" style="width: 65px;">
+        <a class="navbar-brand text-dark" href="">CHAPERO STORE</a>
+        <button class="navbar-toggler text-white" type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent " aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-dark text-center" href="/index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-center" aria-current="page" href="./pages/contactanos.html">CONTACTANOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-center" href="./pages/nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-center" href="./pages/productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-center" href="./pages/login.html">LOGIN</a>
+            </li>
+          </ul>
         </div>
-        <ul class="nav__list">
-          <li class="nav__item nav__item--1">
-             <a class="nav__link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav__item nav__item--2">
-            <a class="nav__link" href="./pages/contactanos.html">Contactanos</a>
-          </li>
-          <li class="nav__item nav__item--3">
-            <a class="nav__link" href="./pages/nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav__item nav__item--4">
-            <a class="nav__link" href="./pages/productos.html">Productos</a>
-          </li>
-          <li class="nav__item nav__item--5">
-            <a class="nav__link" href="./pages/login.html">Login</a>
-          </li>  
-        </ul>
-      </nav>     
-  </header>          
- 
- <!-- inicio Seccion Imagenes -->  
-
-  <section id="section">
-    <div class="imagenes">
-      <h2 class="animate__animated animate__backInRight">poderoso chip M1</h2>
-      <h1 class="animate__animated animate__backInRight">MacBook pro</h1>
-    </div>
-  </section>
-  <section id="section2">
-    <div class="imagenes2">
-      <h2 class="animate__animated animate__backInLeft">iphone 13 pro max</h2>
-      <h1 class="animate__animated animate__backInLeft">muy pro</h1>
-    </div>
-  </section>    
+      </div>
+    </nav>
+  </div>
     
-  <!-- inicio Seccion Video -->         
-        
-  <section id="section3"> 
-    <div class="section__video">
-      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/9tobL8U7dQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </section>     
-                
-  
-<!-- inicio footer -->
+  <!-- inicio carousel imagenes -->  
 
-  <footer class="footer">  
-    <section id="section__redes"> 
-      <div class="Redes">
-        <div class="col">
-           <h2 class="footertexto3">Seguinos en Nuestras Redes</h2>
-           <img class="iconosredes" src="img/facebook.png" alt="" >
-           <img class="iconosredes" src="img/instagram.png" alt="" >
-           <img class="iconosredes" src="img/twitter.png" alt=""  >
-           <img class="iconosredes" src="img/youtube.png" alt="" >
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/ddd.jpg" class="d-block w-100 img-fluid" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/ccc.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/bb.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-     </div>
-    </section>
-    <section class="section__pago">
-       <div class="medios__depago">
-          <div class="col">
-            <h2 class="footertexto2">medios de pago</h2>
-            <img class="iconospago" src="img/visa.png" alt="" >
-            <img class="iconospago" src="img/maestro.png" alt="" >
-            <img class="iconospago" src="img/dinero.png" alt=""  >
-            <img class="iconospago" src="img/facil.png" alt="" >
+      </div>
+    </div>
+  </div>    
+  
+  <!-- inicio liks financiacion  --> 
+
+  <section class="financiacion p-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md">
+          <div class="card text-dark">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <img src="./img/mano.png" alt="">
+              </div>
+              <a href="" class="btn mb-3">POR PLANES DE FINANCIACIÓN ESCRÍBENOS</a>
+            </div>
           </div>
         </div>
-    </section>    
+        <div class="col-md">
+          <div class="card bg-ligth text-dark">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <img src="./img/camion.png" alt="">
+              </div>
+              <a href="" class="btn mb-3">ENVIO GRATIS COMPRAS MAYORES A $10000</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-ligth text-dark">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <img src="./img/call-center.png" alt="">
+              </div>
+              <a href="" class="btn mb-3">ATENCIÓN PERSONALIZADA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- inicio seccion preguntas frecuentes-->
+
+  <section id="preguntas" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">PREGUNTAS FRECUENTES</h2>
+      <div class="accordion accordion-flush" id="preguntas">
+        <!--PREGUNTA 1-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#pregunta1" 
+            >
+              Información sobre nuestros servicios
+            </button>
+          </h2>
+          <div
+            id="pregunta1"
+            class="accordion-collapse collapse"
+            data-bs-parent="#preguntas"
+          >
+            <div class="accordion-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              sequi molestiae illum dolores quis iure delectus natus culpa,
+              ipsa porro atque iusto consequatur sint blanditiis quo id.
+              Eaque, nobis accusantium ea delectus eius necessitatibus nihil
+              placeat amet saepe hic illum dolore voluptatum neque. Aliquid
+              nesciunt numquam architecto obcaecati, ducimus quos?
+            </div>
+          </div>
+        </div>
+        <!--PREGUNTA 2-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#pregunta2"
+            >
+              Estado de mi pedido
+            </button>
+          </h2>
+          <div
+            id="pregunta2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              ut, nemo doloribus nulla quaerat eveniet voluptatibus adipisci,
+              commodi et blanditiis harum dolorem ducimus suscipit praesentium
+              deleniti distinctio recusandae nesciunt cumque. Nemo accusamus,
+              minus, quisquam nulla ad sed porro aut magni temporibus,
+              blanditiis nostrum iure! Voluptate illum saepe totam quia sint?
+            </div>
+          </div>
+        </div>
+        <!--PREGUNTA 3-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#pregunta3"
+            >
+              Cambios y cancelaciones
+            </button>
+          </h2>
+          <div
+            id="pregunta3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Nostrum est doloribus, corporis voluptates sequi quisquam
+              similique necessitatibus enim? Nostrum odio facere laudantium
+              enim architecto? Eum, harum omnis ab rem facilis perferendis
+              minima alias est, nemo culpa libero! Amet ad eius corrupti
+              dolor. Voluptates magni facilis itaque eius quibusdam odio
+              vitae.
+            </div>
+          </div>
+        </div>
+        <!--PREGUNTA 4-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#pregunta4"
+            >
+              Calcular el costo de envio
+            </button>
+          </h2>
+          <div
+            id="pregunta4"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Nostrum est doloribus, corporis voluptates sequi quisquam
+              similique necessitatibus enim? Nostrum odio facere laudantium
+              enim architecto? Eum, harum omnis ab rem facilis perferendis
+              minima alias est, nemo culpa libero! Amet ad eius corrupti
+              dolor. Voluptates magni facilis itaque eius quibusdam odio
+              vitae.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- SECCION INFORMACION-->
+   
+  <section class="p-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md">
+          <div class="cards bg-ligth text-dark">
+            <div class="cards-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+              <h3 class="cards-title mb-3">Chates con Nosotros</h3>
+              <p class="card-text">
+                Escríbenos por whatsapp
+              </p>
+              <a href="" class="btn btn-primary">Mas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="cards bg-ligth text-dark">
+            <div class="cards-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <h3 class="cards-title mb-3">Parana 635 Nueva Cba</h3>
+              <p class="card-text">
+                Lunes a Viernes 10 a 18hs
+              </p>
+              <a href="" class="btn btn-primary">Mas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="cards bg-ligth text-dark">
+            <div class="cards-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <h3 class="cards-title mb-3">LLAMANOS</h3>
+              <p class="card-text">
+                (0351)-151234567
+              </p>
+              <a href="" class="btn btn-primary">Mas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- SECCION SUSCRIPCION-->
+
+  <div class="container-fluid bg-dark">
+    <form class="row g-3  ">
+      <div class="col ">
+        <h5 class="text-center text-white">RECIBI TODAS LAS NOVEDADES</h5>
+      </div>
+      <div class="col">
+        <label for="inputPassword2" class="visually-hidden">Password</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="ingrese su email">
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Suscribirse</button>
+      </div>
+    </form>
+  </div>
+ 
+  <!-- inicio Footer -->
+  <footer class="footer">
+    <div class="container-fluid bg-dark">
+      <div class="container">
+        <div class="row text-center text-white">
+            <div class="col-md-4" >
+              <ul id="block_contact_footer ">
+                <li class="item logo-footer"><img src="../img/Red-dragon.png" style="width: 32px;">CHAPEROSTORE</li> <br>
+              <li class="item">Si tenes dudas escribinos! <br> <br> (0351)151234567</li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-1">
+              <div class="row">
+                <div class="redes col-md-3">
+                  <a href=""><img src="./img/facebook.png" alt="" style="width: 32px;"></a>
+                </div>
+                <div class="redes col-md-3">
+                  <a href=""><img src="./img/instagram.png" alt="" style="width: 32px;"></a>
+                </div>
+                <div class="redes col-md-3">
+                  <a href=""><img src="./img/youtube.png" alt="" style="width: 32px;" ></a>
+                </div>
+                <div class="redes col-md-3">
+                  <a href=""><img src="./img/twitter.png" alt="" style="width: 32px;" ></a>
+                </div>
+              </div>
+            </div>
+            <div class="link-footer col-md-4">
+              <ul class="ul-footer">
+                <li class="link">
+                  <a class="text-white" href="/index.html">INICIO</a>
+                </li>
+                <li class="link">
+                  <a class="text-white" href="./pages/contactanos.html">CONTACTANOS</a>
+                </li>
+                <li class="link">
+                  <a class="text-white" href="./pages/nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="link">
+                  <a class="text-white" href="./pages/productos.html">PRODUCTOS</a>
+                </li>
+                <li class="link">
+                  <a class="page text-white" href="./pages/login.html">LOGIN</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-white text-center bg-dark">
+      <div class="row">
+        <div class="col-12">
+          <p class="copy">Copyright 2019-2022 - CHAPEROSTORE - Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
   </footer>
-</div>
+  
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
-
 
