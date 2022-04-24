@@ -10,7 +10,7 @@
     <title>Redragon</title>
     
     <!-- linkear nuestro css -->
-    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/style.css">
     
     <!-- google font --> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
@@ -30,67 +30,95 @@
 <body>
 
   <!-- inicio navbar --> 
-  <div class="container position-sticky top-0 " style="z-index:1">
-    <nav class="navbar navbar-expand-lg navbar-light py-3">
-      <div class="container">
-        <img src="../img/REDRAGON1.jpg" alt="" style="width: 65px;">
-        <a class="navbar-brand text-dark" href="">CHAPERO STORE</a>
-        <button class="navbar-toggler text-white" type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent " aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link text-center" href="../index.html">INICIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-center" aria-current="page" href="./contactanos.html">CONTACTANOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-center" href="./nosotros.html">NOSOTROS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-center" href="./productos.html">PRODUCTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-center active" href="./login.html">LOGIN</a>
-            </li>
-          </ul>
+  <header>
+    <div class="container position-sticky top-0 " style="z-index:1">
+      <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container">
+          <img src="../img/REDRAGON1.jpg" alt="" style="width: 65px;">
+          <a class="navbar-brand text-dark" href="">CHAPERO STORE</a>
+          <button class="navbar-toggler text-white" type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent " aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-center" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" aria-current="page" href="./contactanos.html">CONTACTANOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="./nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="./productos.html">PRODUCTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center active" href="./login.html">LOGIN</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </div>
+      </nav>
+    </div>
+  </header>
 
 
   <!-- inicio Seccion Login --> 
-  <div class="container-fluid container--productos">
-    <div class="container">
-        <div class="login row text-center py-5">
-           <div class="col">
-             <form class="cuadro__login text-white" action="">
-                 <fieldset class="cuadro__linea">
-                    <legend class="texto__login" >INFORMACION PERSONAL</legend><br>
-                    <br>
-                    <label class="texto__login" for="usuario">USUARIO</label><br>
-                    <br>
-                    <input class="textoinputlogin" type="text" name="usuario" id="usuario" placeholder="Escriba aqui su usuario" size="25px">
-                    <br>
-                    <br>
-                    <label class="texto__login" for="cpntraseña">CONTRASEÑA</label>
-                    <br>
-                    <br>
-                    <input class="textoinputlogin" type="text" name="CONTRASEÑA" id="CONTRASEÑA" placeholder="Escriba aqui su contraseña" size="25px">
-                    <br>
-                    <br>
-                    <input class="boton__login btn-primary" type="submit" value="Login">
-                    <input class="boton__login btn-primary" type="Reset" value="Limpiar Formulario">
-                 </fieldset>
-             </form>
-           </div>
-        </div>
+  <main>
+    <div class="container-fluid container--productos">
+      <div class="container">
+          <div class="login row text-center pt-3">
+             <div class="col text-white">
+              <span>¿YA TIENES UNA CUENTA EN CHAPEROSTORE?</span><br><br>
+              <h3>¡Bienvenido nuevamente a ChaperoStore!</h3>
+             </div>
+          </div>
+          <form class="py-5" action="">
+            <div class="form-group row ">
+              <label class="col-md-3 label-email form-control-label required text-white">Dirección de correo electrónico</label>
+                <div class="col-md-6">
+                  <input class="form-control email" name="email" type="email" value="" required>
+                  <em></em>
+                </div>
+              <div class="col-md-3 form-control-comment form-comment-email text-white">
+                 Campo requerido
+              </div>
+            </div>
+            <div class="form-group row pt-4 ">
+              <label class="col-md-3 label-password form-control-label required text-white">
+                 Contraseña
+              </label>
+              <div class="col-md-6">
+                <div class="input-group">
+                 <input class="form-control" name="password" type="password" value="" required>
+                </div>
+              </div>
+              <div class="col-md-3 form-control-comment form-comment-password text-white">
+                Campo requerido
+              </div>
+            </div>
+            <div class="forgot-password text-center pt-4">
+              <a href="./login.html"> ¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="btn__login text-center clearfix pt-4">
+              <button class="btn btn-primary " type="submit" class="form-control-submit">
+                Iniciar sesión
+              </button>
+            </div>
+          </form>
+          </section>
+          <hr />
+            <div class="no-account text-center pb-5">
+              <a href="./login.html">
+                ¿No tienes cuenta en ChaperoStore? Regístrate
+              </a>
+            </div>
+          </section>
+      </div>
     </div>
-  </div>
-
+  </main>
+  
   <!-- inicio Footer -->
 
   <footer class="footer">
@@ -103,19 +131,19 @@
                 <li class="item">Si tenes dudas escribinos! <br> <br> (0351)151234567</li>
               </ul>
             </div>
-            <div class="col-md-4 mb-1">
+            <div class="redess col-md-4 mb-1">
               <div class="row">
                 <div class="redes col-md-3">
-                  <a href=""><img src="../img/facebook.png" alt="" style="width: 32px;"></a>
+                  <a href=""><img src="../img/facebook.png" alt="imagen youtube" style="width: 32px;"></a>
                 </div>
                 <div class="redes col-md-3">
-                  <a href=""><img src="../img/instagram.png" alt="" style="width: 32px;"></a>
+                  <a href=""><img src="../img/instagram.png" alt="imagen instagram" style="width: 32px;"></a>
                 </div>
                 <div class="redes col-md-3">
-                  <a href=""><img src="../img/youtube.png" alt="" style="width: 32px;" ></a>
+                  <a href=""><img src="../img/youtube.png" alt="imagen youtube" style="width: 32px;" ></a>
                 </div>
                 <div class="redes col-md-3">
-                  <a href=""><img src="../img/twitter.png" alt="" style="width: 32px;" ></a>
+                  <a href=""><img src="../img/twitter.png" alt="imagen twitter" style="width: 32px;" ></a>
                 </div>
               </div>
             </div>
