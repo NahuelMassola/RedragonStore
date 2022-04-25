@@ -1,8 +1,25 @@
-/* < index -->   */
-
 .container nav {
   background-color: rgb(255, 255, 255);
   border-bottom: rgb(0, 0, 0) solid 1px;
+}
+
+.item {
+  list-style: none;
+}
+
+.ul-footer li {
+  list-style: none;
+}
+.ul-footer li a {
+  text-decoration: none;
+}
+
+.link-footer ul {
+  padding-top: 1rem;
+}
+
+.footer__chapero {
+  padding-top: 1rem;
 }
 
 .redes {
@@ -19,38 +36,17 @@
   background-color: rgb(252, 240, 226);
 }
 
-.item {
-  list-style: none;
-}
-
-.ul-footer li a {
-  text-decoration: none;
-}
-
-.ul-footer li {
-  list-style: none;
-}
-
-.link-footer ul {
-  padding-top: 1rem;
-}
-
 .container--texto {
   background-color: rgb(226, 222, 216);
- 
-}
-
-.footer__chapero {
-  padding-top: 1rem;
 }
 
 .cards-body a:hover {
-  background-color: rgb(44, 235, 44);
+  background-color: rgb(49, 243, 49);
   color: black;
 }
 
 .suscribirse button:hover {
-  background-color: rgb(44, 235, 44);
+  background-color: rgb(49, 243, 49);
   color: black;
 }
 
@@ -59,59 +55,19 @@
 }
 
 .preguntas:hover {
-  color: blue;
+  color: rgb(6, 6, 237);
   transform: translate(5px, 5px);
 }
 
 .cards-body div {
   transition: 1s;
 }
-
 .cards-body div:hover {
   transform: scale(1.5, 1.5);
 }
 
-/* < Productos  -->   */
-
-.container--productos {
-  background: linear-gradient(rgb(21, 21, 21), rgb(74, 64, 64));
-}
-
-.img-productos {
-  transition: 1s;
-}
-
-.img-productos:hover {
-  transform: scale(1.1, 1.1);
-}
-
-/* < nosotros  -->   */
-.somos:hover {
-  color: blue;
-}
-
-/* < contactanos  -->   */
-.page-subheading {
-  transition: 2s;
-
-}
-
-.page-subheading:hover {
-    transform: scale(1.5 , 1.5);
-  color: blue;
-}
-
-/* .login {
-  height: 500px;
-} */
-
-.texto__login:hover {
-  color: rgb(72, 50, 241);
-}
-
-
 .btn__login button:hover {
-  background-color: rgb(44, 235, 44);
+  background-color: rgb(49, 243, 49);
   color: black;
 }
 
@@ -122,3 +78,32 @@
 .no-account a {
   text-decoration: none;
 }
+
+.texto__login:hover {
+  color: rgb(6, 6, 237);
+}
+
+.container--productos {
+  background: linear-gradient(rgb(21, 21, 21), rgb(74, 64, 64));
+}
+
+.img-productos {
+  transition: 1s;
+}
+.img-productos:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.page-subheading {
+  transition: 2s;
+}
+.page-subheading:hover {
+  transform: scale(1.5, 1.5);
+  color: rgb(6, 6, 237);
+}
+
+.somos:hover {
+  color: rgb(6, 6, 237);
+}
+
+/*# sourceMappingURL=style.css.map */
