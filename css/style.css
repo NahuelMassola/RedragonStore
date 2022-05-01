@@ -14,10 +14,10 @@
   text-decoration: none;
 }
 
-.link-footer ul {
-  padding-top: 1rem;
-}
-
+/*  .link-footer ul {
+   padding-top: 1rem;
+ }
+*/
 .footer__chapero {
   padding-top: 1rem;
 }
@@ -92,6 +92,13 @@
 }
 .img-productos:hover {
   transform: scale(1.1, 1.1);
+}
+
+.titulo__productos {
+  color: rgb(255, 255, 255);
+}
+.titulo__productos:hover {
+  color: rgb(43, 0, 128);
 }
 
 .page-subheading {
