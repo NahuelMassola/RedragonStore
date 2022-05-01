@@ -71,6 +71,11 @@
   color: black;
 }
 
+.container--login {
+  background: linear-gradient(rgb(21, 21, 21), rgb(74, 64, 64));
+  height: 100vh;
+}
+
 .forgot-password a {
   text-decoration: none;
 }
