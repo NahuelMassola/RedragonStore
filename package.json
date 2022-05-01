@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/NahuelMassola/RedragonStore/issues"
   },
-  "homepage": "https://github.com/NahuelMassola/RedragonStore#readme"
+  "homepage": "https://github.com/NahuelMassola/RedragonStore#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }
