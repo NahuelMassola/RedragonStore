@@ -1,3 +1,51 @@
 .accordion-body {
     color: $accordion-texto;
 }
+
+/* $botones:(
+    wp:red,
+    direccion:blue,
+    llamanos:green
+);
+ */
+
+$colores:(
+    colorBkg:rgb(0, 0, 152),
+    colorBkg2:rgb(0, 0, 255),
+    colorL:black
+);
+
+.prueba{
+    background-color: map-get($colores, colorBkg ) !important;
+    color: map-get($colores, colorL ) !important;
+}
+
+.suscribirse {
+    background-color: map-get($colores, colorBkg2 ) !important;
+    color: map-get($colores, colorL ) !important;
+}
+
+
+.ubicacion {
+    color: rgb(0, 0, 0);
+    
+}
+
+.ubicacion2 {
+    @extend .ubicacion;
+    text-decoration: underline
+
+}
+
+@mixin pageCustom ($color , $font-size) {
+    color: $color;
+    font-size: $font-size;
+}
+
+.page {
+    @include pageCustom(white, 1rem)
+}
+
+    
+    
+

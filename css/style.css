@@ -14,10 +14,6 @@
   text-decoration: none;
 }
 
-/*  .link-footer ul {
-   padding-top: 1rem;
- }
-*/
 .footer__chapero {
   padding-top: 1rem;
 }
@@ -41,11 +37,6 @@
 }
 
 .cards-body a:hover {
-  background-color: rgb(49, 243, 49);
-  color: black;
-}
-
-.suscribirse button:hover {
   background-color: rgb(49, 243, 49);
   color: black;
 }
@@ -120,6 +111,35 @@
 
 .accordion-body {
   color: rgb(255, 0, 0);
+}
+
+/* $botones:(
+    wp:red,
+    direccion:blue,
+    llamanos:green
+);
+ */
+.prueba {
+  background-color: rgb(0, 0, 152) !important;
+  color: black !important;
+}
+
+.suscribirse {
+  background-color: rgb(0, 0, 255) !important;
+  color: black !important;
+}
+
+.ubicacion, .ubicacion2 {
+  color: rgb(0, 0, 0);
+}
+
+.ubicacion2 {
+  text-decoration: underline;
+}
+
+.page {
+  color: white;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
