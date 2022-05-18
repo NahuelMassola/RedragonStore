@@ -3,8 +3,8 @@
 }
 
 $colores:(
-    colorBkg:rgb(0, 0, 152),
-    colorBkg2:rgb(0, 0, 255),
+    colorBkg:rgb(98, 98, 229),
+    colorBkg2:rgb(98, 0, 255),
     colorL:black
 );
 
@@ -38,7 +38,3 @@ $colores:(
 .page {
     @include pageCustom(white, 1rem)
 }
-
-    
-    
-

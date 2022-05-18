@@ -1,0 +1,1 @@
+Hola bienvenido a ChaperoStore, un página de venta de accesorios gamer , computadoras y play station 5 !!
